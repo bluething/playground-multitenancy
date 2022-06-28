@@ -3,6 +3,8 @@ package io.github.bluething.playground.multitenancy.imperativeschema.domain.depa
 import io.github.bluething.playground.multitenancy.imperativeschema.domain.Department;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 
 import java.util.List;
 
@@ -16,6 +18,7 @@ public class DepartmentRestAdapter implements DepartmentRestPort {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<Department> getDepartments() {
         return departmentPersistencePort.getDepartments();
     }
