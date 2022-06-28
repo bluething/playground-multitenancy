@@ -1,4 +1,4 @@
-package io.github.bluething.playground.multitenancy.imperativeschema.infrastucture.persistence;
+package io.github.bluething.playground.multitenancy.imperativeschema.infrastucture.persistence.department;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

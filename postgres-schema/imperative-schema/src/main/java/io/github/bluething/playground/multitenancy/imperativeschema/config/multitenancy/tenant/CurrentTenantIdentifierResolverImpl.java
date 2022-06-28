@@ -5,7 +5,7 @@ import org.hibernate.context.spi.CurrentTenantIdentifierResolver;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ObjectUtils;
 
-@Component
+@Component("currentTenantIdentifierResolver")
 public class CurrentTenantIdentifierResolverImpl implements CurrentTenantIdentifierResolver {
     @Override
     public String resolveCurrentTenantIdentifier() {

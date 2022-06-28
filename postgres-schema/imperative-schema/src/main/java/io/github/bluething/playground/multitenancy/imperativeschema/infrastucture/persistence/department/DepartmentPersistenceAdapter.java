@@ -1,4 +1,4 @@
-package io.github.bluething.playground.multitenancy.imperativeschema.infrastucture.persistence;
+package io.github.bluething.playground.multitenancy.imperativeschema.infrastucture.persistence.department;
 
 import io.github.bluething.playground.multitenancy.imperativeschema.domain.Department;
 import io.github.bluething.playground.multitenancy.imperativeschema.domain.Employee;
