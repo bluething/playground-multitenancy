@@ -57,7 +57,7 @@ public class SchemaBasedMultiTenantConnectionProvider implements MultiTenantConn
 
     @Override
     public void releaseAnyConnection(Connection connection) throws SQLException {
-
+        connection.close();
     }
 
     @Override
